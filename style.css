@@ -641,10 +641,26 @@ footer p {
     padding: 0 5%;
   }
 
-  .brand-mark {
-    width: 40px;
-    height: 40px;
-  }
+.brand-mark {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cream-2);
+  border: 1px solid rgba(198, 155, 87, 0.35);
+  flex-shrink: 0;
+}
+
+.brand-mark img {
+  width: 34px;
+  height: 34px;
+  display: block;
+  object-fit: contain;
+
+}
 
   .nav-cta {
     display: none;
@@ -743,4 +759,94 @@ footer p {
     background: var(--gold);
     color: var(--black);
   }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 90px 18px 40px;
+    min-height: auto;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    text-align: left;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    line-height: 0.95;
+    letter-spacing: -2px;
+  }
+
+  .hero p {
+    font-size: 15px;
+    max-width: 100%;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-card {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .section {
+    padding: 55px 18px;
+  }
+
+  .section h2 {
+    font-size: 34px;
+    line-height: 1;
+  }
+
+  .cards,
+  .service-grid,
+  .process-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    padding: 14px 18px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-cta {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+
+  .profile-image {
+    height: auto;
+    max-height: 420px;
+    object-fit: cover;
+  }
+}
+
+.brand-mark img {
+  width: 34px;
+  height: 34px;
+  display: block;
+  object-fit: contain;
+}
+
+.brand-mark {
+  overflow: hidden;
 }
